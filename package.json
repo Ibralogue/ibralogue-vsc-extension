@@ -1,0 +1,34 @@
+{
+  "name": "ibralogue",
+  "displayName": "Ibralogue",
+  "description": "Adds support for the greatest unity dialogue language of all time, Ibralogue.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.65.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ibralogue",
+        "aliases": [
+          "Ibralogue",
+          "ibralogue"
+        ],
+        "extensions": [
+          ".ibra"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ibralogue",
+        "scopeName": "source.ibralogue",
+        "path": "./syntaxes/ibralogue.tmLanguage.json"
+      }
+    ]
+  }
+}

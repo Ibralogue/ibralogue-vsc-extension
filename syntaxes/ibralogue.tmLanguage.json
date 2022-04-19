@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Ibralogue",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#functions"
+    },
+    {
+      "include": "#globalVariables"
+    },
+    {
+      "include": "#choices"
+    }
+  ],
+
+  "repository": {
+    "comments": {
+      "name": "comment.line.ibralogue",
+      "match": "^#.*$"
+    },
+
+    "functions": {
+      "patterns": [
+        {
+          "include": "#reserved"
+        }
+      ]
+    },
+
+    "reserved": {
+      "patterns": [
+        {
+          "name": "storage.modifier.ibralogue",
+          "match": "\\b(DialogueName|DialogueEnd)\\b"
+        }
+      ]
+    },
+
+    "globalVariables": {
+      "name": "entity.name.variable.local.ibralogue",
+      "match": "%.*%"
+    },
+
+    "choices": {
+      "patterns": [
+        {
+          "include": "#operators"
+        }
+      ]
+    },
+
+    "operators": {
+      "name": "keyword.operator.arithmetic.ibralogue",
+      "match": "->(?=.*)"
+    }
+  },
+
+  "scopeName": "source.ibralogue"
+}
