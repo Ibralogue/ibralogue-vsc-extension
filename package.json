@@ -2,7 +2,7 @@
   "name": "ibralogue",
   "displayName": "Ibralogue",
   "description": "Adds support for the greatest unity dialogue language of all time, Ibralogue.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.65.0"
   },
