@@ -21,7 +21,6 @@
       "name": "comment.line.ibralogue",
       "match": "^#.*$"
     },
-
     "functions": {
       "patterns": [
         {
@@ -29,7 +28,6 @@
         }
       ]
     },
-
     "reserved": {
       "patterns": [
         {
@@ -38,12 +36,10 @@
         }
       ]
     },
-
     "globalVariables": {
       "name": "entity.name.variable.local.ibralogue",
       "match": "%.*%"
     },
-
     "choices": {
       "patterns": [
         {
@@ -51,7 +47,6 @@
         }
       ]
     },
-
     "operators": {
       "name": "keyword.operator.arithmetic.ibralogue",
       "match": "->(?=.*)"
