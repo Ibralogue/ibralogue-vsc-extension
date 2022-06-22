@@ -10,7 +10,7 @@
       "include": "#functions"
     },
     {
-      "include": "#globalVariables"
+      "include": "#variables"
     },
     {
       "include": "#choices"
@@ -19,17 +19,33 @@
 
   "repository": {
     "comments": {
-      "name": "comment.line.ibralogue",
+      "name": "comment.line.number-sign.ibralogue",
       "match": "^#.*$"
     },
     "functions": {
       "patterns": [
         {
-          "include": "#reserved"
+          "name": "keyword.other",
+          "begin": "\\{\\{",
+          "end": "\\}\\}",
+          "patterns": [
+            {
+              "comment": "function that is being invoked",
+              "match": "(?<=\\{\\{)\\w+",
+              "name": "entity.name.function.ibralogue"
+            },
+            {
+              "include": "#strings"
+            },
+            {
+              "include": "#numbers"
+            }
+          ]
         }
       ]
     },
-    "reserved": {
+
+    "keywords": {
       "patterns": [
         {
           "name": "storage.modifier.ibralogue",
@@ -37,9 +53,9 @@
         }
       ]
     },
-    "globalVariables": {
+    "variables": {
       "name": "entity.name.variable.local.ibralogue",
-      "match": "%.*%"
+      "match": "\\$\\w+"
     },
     "choices": {
       "patterns": [
@@ -60,6 +76,7 @@
         }
       ]
     },
+
     "strings": {
       "name": "string.quoted.double.yarnspinner",
       "begin": "\"",
