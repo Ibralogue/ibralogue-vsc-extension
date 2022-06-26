@@ -4,7 +4,7 @@
   "icon": "images/Logo.png",
   "publisher": "ibra",
   "description": "Adds support for the greatest unity dialogue language of all time, Ibralogue.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.50.0"
   },
