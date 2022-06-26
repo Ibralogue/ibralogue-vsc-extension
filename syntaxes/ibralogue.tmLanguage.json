@@ -25,7 +25,7 @@
     "functions": {
       "patterns": [
         {
-          "name": "keyword.other",
+          "name": "keyword.other.ibralogue",
           "begin": "\\{\\{",
           "end": "\\}\\}",
           "patterns": [
@@ -44,7 +44,6 @@
         }
       ]
     },
-
     "keywords": {
       "patterns": [
         {
@@ -58,32 +57,30 @@
       "match": "\\$\\w+"
     },
     "choices": {
+      "name": "keyword.operator.arithmetic.ibralogue",
       "patterns": [
         {
-          "include": "#operators"
-        }
-      ]
-    },
-    "operators": {
-      "patterns": [
+          "name": "keyword.operator.arithmetic.ibralogue",
+          "match": "^-"
+        },
         {
           "name": "keyword.operator.arithmetic.ibralogue",
           "match": "->(?=.*)"
         },
         {
-          "name": "keyword.operator.arithmetic.ibralogue",
-          "match": "^-"
+          "name": "keyword.other.ibralogue",
+          "match": "(?<=->).*"
         }
       ]
     },
 
     "strings": {
-      "name": "string.quoted.double.yarnspinner",
+      "name": "string.quoted.double.ibralogue",
       "begin": "\"",
       "end": "\"",
       "patterns": [
         {
-          "name": "constant.character.escape.yarnspinner",
+          "name": "constant.character.escape.ibralogue",
           "match": "\\\\."
         }
       ]
