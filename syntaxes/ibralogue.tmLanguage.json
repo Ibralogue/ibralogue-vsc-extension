@@ -68,7 +68,7 @@
           "match": "->(?=.*)"
         },
         {
-          "name": "keyword.other.ibralogue",
+          "name": "entity.name.function.ibralogue",
           "match": "(?<=->).*"
         }
       ]
